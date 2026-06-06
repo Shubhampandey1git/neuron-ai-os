@@ -1,0 +1,98 @@
+name: 🐛 Bug Report
+description: Something broke? Tell us exactly what happened.
+title: "[bug]: "
+labels: ["bug", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Fill this out as completely as you can — vague reports are hard to reproduce.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: "When I send a voice message, the server crashes with a 500 error."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Exact steps to trigger the bug.
+      value: |
+        1. Start the server with `uvicorn app.main:app --reload`
+        2. Send a POST to `/voice/transcribe` with ...
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      placeholder: "The voice should be transcribed and passed to the agent."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or error output
+      description: Paste the full traceback or server logs here.
+      render: shell
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which component is affected?
+      multiple: true
+      options:
+        - Voice / Whisper
+        - LangChain Agent
+        - Ollama integration
+        - ChromaDB / RAG
+        - OS Tools
+        - FastAPI / API layer
+        - CI / Dev tooling
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: python_version
+    attributes:
+      label: Python version
+      placeholder: "3.11.8"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Ubuntu 22.04 / macOS 14.4 / Windows 11"
+    validations:
+      required: true
+
+  - type: input
+    id: ollama_model
+    attributes:
+      label: Ollama model in use
+      placeholder: "llama3.2:3b, mistral, etc."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this is not a duplicate
+          required: true
+        - label: I am on the latest commit of `main`
+          required: true
+        - label: I have included logs or a stack trace
+          required: false

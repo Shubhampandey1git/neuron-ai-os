@@ -1,0 +1,84 @@
+name: 🚀 Feature Request
+description: Got an idea for a new tool, capability, or improvement? Pitch it here.
+title: "[feat]: "
+labels: ["enhancement", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting — search open issues to see if this has already been requested. If it has, drop a 👍 on it instead.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the use case or pain point. "I want X" is less useful than "When I try to do Y, I can't because Z."
+      placeholder: "When I ask the assistant to summarize a webpage, it has no way to fetch the URL content..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What would you like to see built? Be as specific as you can.
+      placeholder: "Add a `fetch_webpage(url)` LangChain tool that uses httpx to fetch and clean HTML content..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Any other approaches you thought about?
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Which area does this touch?
+      multiple: true
+      options:
+        - Voice / Whisper
+        - LangChain Agent
+        - Ollama integration
+        - ChromaDB / RAG
+        - OS Tools
+        - FastAPI / API layer
+        - Chat UI
+        - CI / Dev tooling
+        - New tool / plugin
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: How complex do you think this is?
+      options:
+        - Small (a few lines, isolated change)
+        - Medium (new function or tool, some wiring)
+        - Large (new subsystem or significant refactor)
+        - Not sure
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Would you like to work on this?
+      options:
+        - label: Yes, I'd like to implement this myself and open a PR
+        - label: I can help review or test, but not implement
+        - label: I'm just suggesting — happy for anyone to pick it up
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this hasn't been requested before
+          required: true
