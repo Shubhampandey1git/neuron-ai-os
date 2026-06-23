@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![CI](https://github.com/YOUR_USERNAME/neuron-ai-os/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/neuron-ai-os/actions/workflows/ci.yml)
+[![CI](https://github.com/Shubhampandey1git/neuron-ai-os/actions/workflows/ci.yml/badge.svg)](https://github.com/Shubhampandey1git/neuron-ai-os/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.11+-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![LangChain](https://img.shields.io/badge/LangChain-0.2+-1C3C3C?logo=chainlink&logoColor=white)](https://langchain.com/)
@@ -109,7 +109,7 @@ No cloud. No API keys. No data leaving your device.
 
 ```bash
 # 1. Clone and enter the repo
-git clone https://github.com/YOUR_USERNAME/neuron-ai-os.git && cd neuron-ai-os
+git clone https://github.com/Shubhampandey1git/neuron-ai-os.git && cd neuron-ai-os
 
 # 2. Set up a virtual environment and install dependencies
 python -m venv .venv && source .venv/bin/activate
@@ -209,7 +209,7 @@ Reinforcement learning · adaptive decision-making · reward optimization.
 Synthetic data generation · self-evaluation · continuous improvement.
 **Goal:** a system that critiques and improves its own performance over time.
 
-Track progress on the [Issues](https://github.com/YOUR_USERNAME/neuron-ai-os/issues) board — each version will get its own milestone.
+Track progress on the [Issues](https://github.com/Shubhampandey1git/neuron-ai-os/issues) board — each version will get its own milestone.
 
 ---
 
@@ -217,13 +217,13 @@ Track progress on the [Issues](https://github.com/YOUR_USERNAME/neuron-ai-os/iss
 
 Contributions are welcome at any layer of the architecture — from a V1 bug fix to proposing how a future planning or learning module should work. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get started.
 
-First time contributing to open source? Look for [`good first issue`](https://github.com/YOUR_USERNAME/neuron-ai-os/labels/good%20first%20issue) labels.
+First time contributing to open source? Look for [`good first issue`](https://github.com/Shubhampandey1git/neuron-ai-os/labels/good%20first%20issue) labels.
 
 ---
 
 ## 📄 License
 
-MIT © 2026 [Your Name](https://github.com/YOUR_USERNAME)
+MIT © 2026 [Shubham Pandey](https://github.com/Shubhampandey1git)
 
 ---
 
